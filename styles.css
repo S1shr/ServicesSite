@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  padding: 32px;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: #243e63;
+}
+
+.text__purple {
+  color: #6415ff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
+.nav__img {
+  width: 2.5rem;
+  margin-right: 0.75rem;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nav__links--left {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 24px !important;
+  margin-left: 0px !important;
+}
+
+.nav__links--right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link--sep {
+  margin: 0 24px 0 48px;
+}
+
+.nav__link--right {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 24px;
+  margin: 0 24px;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  padding-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+#about {
+  position: relative;
+}
+
+.about__columns {
+  display: flex;
+}
+
+.about__columns--left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.about__header {
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.about__para {
+  margin: 32px 0;
+  font-weight: 500;
+  font-size: 1.125rem;
+  width: 100%;
+  color: #243e63;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about__email {
+  border: none;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 24px;
+  color: #718096;
+  outline: none;
+}
+
+.left__column--inputs {
+  padding: 20px 12rem 20px 32px;
+  background-color: white;
+  display: flex;
+  border-radius: 32px;
+  border: 2px solid #e6e7eb;
+  max-width: 28rem;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.left__column--inputs:hover {
+  border: 2px solid #a0aec0;
+}
+
+.left__column--trust {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.about__trust--disc {
+  color: #a0aec0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.about__trust--img {
+  margin-top: 1rem;
+  opacity: 0.5;
+  padding-right: 128px;
+}
+
+.about__right--column {
+  width: 60%;
+}
+
+.purple__box {
+  border-radius: 9999px;
+  background-color: #6415ff;
+  color: #f7fafc;
+  margin: 0;
+  padding: 12px 32px;
+  border: none;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.about__email--button {
+  margin: 8px 8px 8px 0;
+  position: absolute;
+  width: 10rem;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  padding: 16px 0;
+  line-height: 1;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* FEATURES */
+
+.features__description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  font-size: 18px;
+  color: #718ba1;
+  font-weight: 500;
+  line-height: 1.625;
+  max-width: 36rem;
+}
+
+h1 {
+  width: 100%;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #243e63;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #6415ff;
+  font-size: 16px;
+}
+
+.features__panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.features__panel {
+  max-width: 24rem;
+  width: calc(100% / 3);
+}
+
+.features__panel--box {
+  margin: 0 16px;
+  padding: 32px 8px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  height: 100%;
+}
+
+.features__icon {
+  border-width: 1px;
+  text-align: center;
+  border-radius: 9999px;
+  padding: 1.25rem;
+  flex-shrink: 0;
+  border: 2px solid #e6e7eb;
+  max-width: 64px;
+}
+
+.panel__sep {
+  padding: 8px 0px 0px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__title {
+  color: #243e63;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+
+.panel__para {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 500;
+  max-width: 12rem;
+  color: #7c8ba1;
+}
+
+/* LEARN */
+
+.learn__column {
+  display: flex;
+}
+
+.learn__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  text-align: left;
+}
+
+.learn__title--disc {
+  text-align: left;
+  margin-top: 16px;
+  width: 100%;
+  max-width: 36rem;
+  line-height: 1.25;
+}
+
+.learn__para {
+  margin: 0;
+  margin-top: 16px;
+}
+
+.learn__button {
+  margin-top: 32px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 9rem;
+}
+
+.learn__img--wrapper {
+  width: 50%;
+  height: inherit;
+}
+
+.learn__img {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: #cbd5e0;
+}
+
+/* STEPS */
+
+.steps__column {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 100%;
+}
+
+.steps__right--column {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+}
+
+.steps__img {
+    max-width: 640px;
+}
+
+.steps__title {
+  text-align: left;
+}
+
+.steps__title--disc {
+  text-align: left;
+  margin-top: 16px;
+}
+
+.steps__ordered {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.steps__ordered--items {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.steps__listed {
+    margin-top: 0px;
+    margin-left: 1.5rem;
+}
+
+
+.step__order--title {
+    line-height: 1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.step__order--para {
+    margin-top: 0.75rem;
+    max-width: 20rem;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.number {
+    color: #cbd5e0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;  
+}
