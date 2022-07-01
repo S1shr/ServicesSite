@@ -492,6 +492,11 @@ h2 {
 
 /* PRICING */
 
+.three__choices {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pricing__column {
   margin-top: 2.5rem;
   width: 100%;
@@ -509,6 +514,23 @@ h2 {
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  border: 1px solid #CBD5E0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.pricing__choice--middle {
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.pricing__choice--top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top:8px solid rgba(56, 178, 172, 0.55);
+}
+
+.cmiddle {
+  color: #fff !important;
 }
 
 .choice__top {
@@ -550,19 +572,24 @@ h2 {
 }
 
 .choice__bottom {
-  padding: 2rem 1rem;
+  padding: 32px 64px;
 }
 
 .buy__button {
-  background: rgb(56 178 172);
   border: none;
-  border-radius: 9999px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 16px 32px;
   width: 100%;
   font-size: 0.875rem;
-  color: #f7fafc;
   font-weight: 700;
+}
+
+.buy__button--top {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.buy__button--middle {
+  background-color:white;
+  color:#6415FF;
 }
